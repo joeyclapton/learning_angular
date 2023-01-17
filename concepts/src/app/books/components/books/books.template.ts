@@ -5,4 +5,14 @@ import { Component } from '@angular/core';
   templateUrl: './books.template.html',
   styleUrls: ['./books.template.scss'],
 })
-export class BooksComponent {}
+export class BooksComponent {
+  books: Array<string>;
+
+  constructor() {
+    this.books = [
+      'Torto Arado',
+      'Estação Carandiru',
+      'O sonho de um homem ridículo',
+    ];
+  }
+}
