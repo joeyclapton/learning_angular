@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class BooksService {
+  constructor() {}
 
-  constructor() { }
+  getBooks(): Array<string> {
+    return ['Torto Arado', 'Estação Carandiru', 'O sonho de um homem ridículo'];
+  }
 }
