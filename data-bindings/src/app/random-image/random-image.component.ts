@@ -9,8 +9,10 @@ const BASE_URL = 'https://picsum.photos/200/300';
 })
 export class RandomImage {
   urlImage: string;
+  altImage: string;
 
   constructor() {
     this.urlImage = BASE_URL;
+    this.altImage = 'Random image';
   }
 }
