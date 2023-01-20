@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss'],
 })
 export class FormComponent {
-  firstname: string;
-  lastname: string;
-  age!: number;
+  user: any = {
+    firstname: '',
+    lastname: '',
+    age: '',
+  };
 
-  constructor() {
-    this.firstname = '';
-    this.lastname = '';
-  }
+  constructor() {}
 }
