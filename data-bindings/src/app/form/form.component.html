@@ -1,0 +1,20 @@
+<input
+  type="text"
+  [ngModel]="firstname"
+  (ngModelChange)="firstname = $event"
+  placeholder="Nome"
+/>
+<input
+  type="text"
+  [ngModel]="lastname"
+  (ngModelChange)="lastname = $event"
+  placeholder="Sobrenome"
+/>
+<input type="text" [(ngModel)]="age" placeholder="idade" />
+
+<p>Informações:</p>
+<ul>
+  <li>Nome: {{ firstname }}</li>
+  <li>Sobrenome: {{ lastname }}</li>
+  <li>Idade: {{ age }}</li>
+</ul>
