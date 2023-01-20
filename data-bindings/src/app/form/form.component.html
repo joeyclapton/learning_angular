@@ -4,12 +4,7 @@
   (ngModelChange)="firstname = $event"
   placeholder="Nome"
 />
-<input
-  type="text"
-  [ngModel]="lastname"
-  (ngModelChange)="lastname = $event"
-  placeholder="Sobrenome"
-/>
+<input type="text" bindon-ngModel="lastname" placeholder="Sobrenome" />
 <input type="text" [(ngModel)]="age" placeholder="idade" />
 
 <p>Informações:</p>
