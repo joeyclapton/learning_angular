@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { RandomImage } from './random-image/random-image.component';
 import { RandomNumberComponent } from './random-number/random-number.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { RandomNumberComponent } from './random-number/random-number.component';
     AlertComponent,
     RandomNumberComponent,
     FormComponent,
+    BooksComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
