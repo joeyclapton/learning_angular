@@ -1,0 +1,25 @@
+.notification {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: bold;
+  margin: 16px;
+
+  &--DEFAULT {
+    border-color: rgb(119, 126, 145);
+    background-color: rgba(119, 126, 145, 0.12);
+    color: rgb(119, 126, 145);
+  }
+
+  &--SUCCESS {
+    border-color: rgb(4, 191, 123);
+    background-color: rgba(4, 191, 123, 0.12);
+    color: rgb(4, 191, 123);
+  }
+
+  &--DANGER {
+    border-color: rgb(202, 15, 13);
+    background-color: rgba(202, 15, 13, 0.12);
+    color: rgb(202, 15, 13);
+  }
+}

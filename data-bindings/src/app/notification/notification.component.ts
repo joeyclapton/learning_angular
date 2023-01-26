@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+type STATUS = 'SUCCESS' | 'DANGER' | 'DEFAULT';
 
 @Component({
   selector: 'notification',
@@ -6,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./notification.component.scss'],
 })
 export class NotificationComponent implements OnInit {
-  constructor() {}
+  @Input() statusSelected: STATUS;
+  @Input() message: string;
+
+  constructor() {
+    this.statusSelected = 'DEFAULT';
+    this.message = '';
+  }
 
   ngOnInit(): void {}
 }

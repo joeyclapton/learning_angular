@@ -1,2 +1,7 @@
 <book name="A consolação da filosofia" author="Boécio" [rating]="4.5"></book>
-
+<notification
+  [message]="notificationMessage"
+  [statusSelected]="notificationStatus"
+></notification>
+<p>Livro lidos:</p>
+<counter [valueProperty]="10" (changeValue)="onChangeValue($event)"></counter>
