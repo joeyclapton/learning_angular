@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {
+    Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild
+} from '@angular/core';
 
 @Component({
   selector: 'counter',
@@ -9,8 +11,9 @@ export class CounterComponent implements OnInit {
   value: number;
 
   @Input() valueProperty: number;
-
   @Output() changeValue = new EventEmitter();
+
+  @ViewChild('inputValue') inputValue!: ElementRef;
 
   constructor() {
     this.value = 0;
@@ -33,6 +36,7 @@ export class CounterComponent implements OnInit {
   }
 
   increase(): void {
+    console.log(this.inputValue);
     this.value++;
     this.changeValue.emit({
       currentValue: this.value,
