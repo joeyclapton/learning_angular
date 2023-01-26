@@ -11,16 +11,16 @@ import { RandomImage } from './random-image/random-image.component';
 import { RandomNumberComponent } from './random-number/random-number.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        RandomImage,
-        AlertComponent,
-        RandomNumberComponent,
-        FormComponent,
-        BooksComponent,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [BrowserModule, FormsModule, BooksModule]
+  declarations: [
+    AppComponent,
+    RandomImage,
+    AlertComponent,
+    RandomNumberComponent,
+    FormComponent,
+    BooksComponent,
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+  imports: [BrowserModule, FormsModule, BooksModule],
 })
 export class AppModule {}
