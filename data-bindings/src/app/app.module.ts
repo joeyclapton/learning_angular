@@ -9,6 +9,7 @@ import { BooksModule } from './books/books.module';
 import { FormComponent } from './form/form.component';
 import { RandomImage } from './random-image/random-image.component';
 import { RandomNumberComponent } from './random-number/random-number.component';
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RandomNumberComponent } from './random-number/random-number.component';
     RandomNumberComponent,
     FormComponent,
     BooksComponent,
+    EventsComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
