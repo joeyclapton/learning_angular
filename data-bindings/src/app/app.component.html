@@ -8,3 +8,8 @@
 <hr />
 <books></books>
 <hr />
+<div>
+  <button (click)="removeLifeCycle()">Remove life cycle</button>
+  <log [value]="value" *ngIf="!showLifeCycle"></log>
+  <button (click)="changeValue()">Change value</button>
+</div>
