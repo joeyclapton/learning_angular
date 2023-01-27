@@ -1,10 +1,13 @@
-<form>
+<form class="new-todo">
   <input
     type="text"
     name="itemName"
     id="ItemName"
     [(ngModel)]="name"
     placeholder="Nome do item"
+    class="name"
   />
-  <button type="button" (click)="addTodo()">Adicionar</button>
+  <button type="button" (click)="addTodo()" class="btn-add" [disabled]="!name">
+    Adicionar
+  </button>
 </form>

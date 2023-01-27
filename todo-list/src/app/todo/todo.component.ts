@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-todo',
@@ -12,6 +13,7 @@ export class TodoComponent {
   @Output() removeItem = new EventEmitter();
 
   isCheck: boolean;
+  faTrash = faTrash;
 
   constructor() {
     this.id = '';
@@ -19,8 +21,9 @@ export class TodoComponent {
     this.isCheck = false;
   }
 
-  onChangeChecked(): void {
-    this.isCheck = !this.isCheck;
+  onChangeChecked(event: Event): void {
+    const { checked } = event.target as HTMLInputElement;
+    this.isCheck = checked;
   }
 
   onRemoveItem(): void {
