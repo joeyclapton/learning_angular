@@ -1,4 +1,10 @@
 <form>
-  <input type="text" name="itemName" id="ItemName" [(ngModel)]="name" />
+  <input
+    type="text"
+    name="itemName"
+    id="ItemName"
+    [(ngModel)]="name"
+    placeholder="Nome do item"
+  />
   <button type="button" (click)="addTodo()">Adicionar item</button>
 </form>

@@ -17,10 +17,12 @@ export class NewTodoComponent implements OnInit {
   ngOnInit(): void {}
 
   addTodo(): void {
-    this.nameChanged.emit({
-      name: this.name,
-    });
+    if (this.name) {
+      this.nameChanged.emit({
+        name: this.name,
+      });
 
-    this.name = '';
+      this.name = '';
+    }
   }
 }
