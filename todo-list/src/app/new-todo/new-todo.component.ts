@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-new-todo',
@@ -6,11 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new-todo.component.sass'],
 })
 export class NewTodoComponent implements OnInit {
-  itemName: string;
+  name: string;
+
+  @Output() nameChanged = new EventEmitter();
 
   constructor() {
-    this.itemName = '';
+    this.name = '';
   }
 
   ngOnInit(): void {}
+
+  addTodo(): void {
+    this.nameChanged.emit({
+      name: this.name,
+    });
+
+    this.name = '';
+  }
 }

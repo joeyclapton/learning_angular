@@ -1,1 +1,9 @@
-<p>todo works!</p>
+<div>
+  <input
+    type="checkbox"
+    name="Todo-{{ id }}"
+    [value]="isCheck"
+    [id]="'Todo-' + id"
+  />
+  <span>{{ name }}</span>
+</div>

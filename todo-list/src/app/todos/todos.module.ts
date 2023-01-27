@@ -7,7 +7,7 @@ import { TodoComponent } from '../todo/todo.component';
 
 @NgModule({
   declarations: [NewTodoComponent, TodoComponent],
-  exports: [NewTodoComponent],
+  exports: [NewTodoComponent, TodoComponent],
   imports: [CommonModule, FormsModule],
 })
 export class TodosModule {}
