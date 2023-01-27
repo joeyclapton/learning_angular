@@ -16,4 +16,8 @@ export class TodoComponent {
     this.name = '';
     this.isCheck = false;
   }
+
+  onChangeChecked(): void {
+    this.isCheck = !this.isCheck;
+  }
 }

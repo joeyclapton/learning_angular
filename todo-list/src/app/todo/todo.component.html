@@ -4,6 +4,7 @@
     name="Todo-{{ id }}"
     [value]="isCheck"
     [id]="'Todo-' + id"
+    (change)="onChangeChecked()"
   />
-  <span class="todo-name">{{ name }}</span>
+  <span class="name" [ngClass]="{ 'name--checked': isCheck }">{{ name }}</span>
 </div>
