@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-todo',
@@ -8,6 +8,8 @@ import { Component, Input } from '@angular/core';
 export class TodoComponent {
   @Input() id: string;
   @Input() name: string;
+
+  @Output() removeItem = new EventEmitter();
 
   isCheck: boolean;
 
@@ -19,5 +21,12 @@ export class TodoComponent {
 
   onChangeChecked(): void {
     this.isCheck = !this.isCheck;
+  }
+
+  onRemoveItem(): void {
+    this.removeItem.emit({
+      id: this.id,
+      name: this.name,
+    });
   }
 }
