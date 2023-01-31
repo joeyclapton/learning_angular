@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { StatusComponent } from './status/status.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { ContentListComponent } from './content-list/content-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StatusComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    ContentListComponent
   ],
   imports: [
     BrowserModule
