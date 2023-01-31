@@ -1,1 +1,4 @@
-<p>status works!</p>
+<section>
+  <p *ngIf="currentStatus">Estado atual: {{ currentStatus }}</p>
+  <p [hidden]="!nextStatus">Próximo estado: {{ nextStatus }}</p>
+</section>

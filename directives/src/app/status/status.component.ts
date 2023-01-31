@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-status',
   templateUrl: './status.component.html',
-  styleUrls: ['./status.component.scss']
+  styleUrls: ['./status.component.scss'],
 })
 export class StatusComponent implements OnInit {
+  @Input() currentStatus: string;
+  @Input() nextStatus: string;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    this.currentStatus = '';
+    this.nextStatus = '';
   }
 
+  ngOnInit(): void {}
 }
