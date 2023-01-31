@@ -1,0 +1,5 @@
+<ol [hidden]="!showInfos">
+  <li>Nome: {{ name }}</li>
+  <li>Idade: {{ age }}</li>
+  <li *ngIf="numberOfCards">Cartões cadastrados: {{ numberOfCards }}</li>
+</ol>
