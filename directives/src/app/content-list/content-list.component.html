@@ -2,13 +2,14 @@
   <li *ngFor="let item of list" (click)="changeItem(item)">{{ item }}</li>
 </ul>
 <div [ngSwitch]="currentItem">
-  <app-user-info
-    name="Joey Clapton"
-    [age]="16"
-    [showInfos]="true"
-    [numberOfCards]="6"
-    *ngSwitchDefault="'About me'"
-  ></app-user-info>
   <p *ngSwitchCase="'Resume'">Empresas: MerxTI, Nucont, Hotmart, CI&T</p>
   <p *ngSwitchCase="'Projects'">Projetos github:</p>
+  <div *ngSwitchDefault>
+    <app-user-info
+      name="Joey Clapton"
+      [age]="16"
+      [showInfos]="true"
+      [numberOfCards]="6"
+    ></app-user-info>
+  </div>
 </div>
