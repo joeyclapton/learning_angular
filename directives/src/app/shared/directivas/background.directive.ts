@@ -13,7 +13,7 @@ export class BackgroundDirective {
 
     this.renderer.setStyle(
       this.elementRef.nativeElement,
-      'backgroundColor',
+      'background-color',
       'cyan'
     );
   }
