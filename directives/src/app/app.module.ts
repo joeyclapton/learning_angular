@@ -6,6 +6,7 @@ import { StatusComponent } from './status/status.component';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { PostComponent } from './post/post.component';
+import { BackgroundDirective } from './shared/directivas/background.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PostComponent } from './post/post.component';
     StatusComponent,
     UserInfoComponent,
     ContentListComponent,
-    PostComponent
+    PostComponent,
+    BackgroundDirective
   ],
   imports: [
     BrowserModule
