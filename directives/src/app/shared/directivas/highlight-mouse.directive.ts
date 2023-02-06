@@ -1,24 +1,33 @@
-import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  HostBinding,
+  HostListener,
+  Renderer2,
+} from '@angular/core';
 
 @Directive({
   selector: '[highlightMouse]',
 })
 export class HighlightMouseDirective {
   @HostListener('mouseenter') onMouseOver() {
-    this._renderer.setStyle(
-      this._ref.nativeElement,
-      'background-color',
-      'orange'
-    );
+    this.backgroundColor = 'orange';
+    this.fontSize = '22px';
   }
 
   @HostListener('mouseleave') onMouseLeave() {
-    this._renderer.setStyle(
-      this._ref.nativeElement,
-      'background-color',
-      'white'
-    );
+    this.backgroundColor = 'white';
+    this.fontSize = '16px';
   }
 
-  constructor(private _ref: ElementRef, private _renderer: Renderer2) {}
+  @HostBinding('style.backgroundColor') backgroundColor: string | undefined;
+  @HostBinding('style.fontSize') get setColor() {
+    return this.fontSize;
+  }
+
+  private fontSize: string;
+
+  constructor() {
+    this.fontSize = '16px';
+  }
 }
