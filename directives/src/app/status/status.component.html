@@ -1,4 +1,6 @@
 <section>
-  <p *ngIf="currentStatus">Estado atual: {{ currentStatus }}</p>
+  <p *ngIf="currentStatus" highlight [highlightColor]="'blue'">
+    Estado atual: {{ currentStatus }}
+  </p>
   <p [hidden]="!nextStatus">Próximo estado: {{ nextStatus }}</p>
 </section>

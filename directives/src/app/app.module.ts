@@ -8,6 +8,7 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { PostComponent } from './post/post.component';
 import { BackgroundDirective } from './shared/directivas/background.directive';
 import { HighlightMouseDirective } from './shared/directivas/highlight-mouse.directive';
+import { HighlightDirective } from './shared/directivas/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HighlightMouseDirective } from './shared/directivas/highlight-mouse.dir
     ContentListComponent,
     PostComponent,
     BackgroundDirective,
-    HighlightMouseDirective
+    HighlightMouseDirective,
+    HighlightDirective
   ],
   imports: [
     BrowserModule

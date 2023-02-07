@@ -1,8 +1,7 @@
 <ul>
   <li *ngFor="let item of list" (click)="changeItem(item)">{{ item }}</li>
 </ul>
-<p highlightMouse>text</p>
-<p highlightMouse>Testando</p>
+
 <div [ngSwitch]="currentItem">
   <p *ngSwitchCase="'Resume'">Empresas: MerxTI, Nucont, Hotmart, CI&T</p>
   <p *ngSwitchCase="'Projects'" highlightMouse>Projetos github:</p>
