@@ -9,6 +9,8 @@ import { PostComponent } from './post/post.component';
 import { BackgroundDirective } from './shared/directivas/background.directive';
 import { HighlightMouseDirective } from './shared/directivas/highlight-mouse.directive';
 import { HighlightDirective } from './shared/directivas/highlight.directive';
+import { NgElseDirective } from './shared/directivas/ng-else.directive';
+import { CustomDirectiveComponent } from './custom-directive/custom-directive.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { HighlightDirective } from './shared/directivas/highlight.directive';
     PostComponent,
     BackgroundDirective,
     HighlightMouseDirective,
-    HighlightDirective
+    HighlightDirective,
+    NgElseDirective,
+    CustomDirectiveComponent
   ],
   imports: [
     BrowserModule
