@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.sass']
 })
 export class CoursesComponent {
+  courses: Array<string>;
 
+  constructor() {
+    this.courses = ['Angular', 'Node', 'Flutter']
+  }
 }
