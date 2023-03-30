@@ -1,5 +1,0 @@
-<section class="todos">
-  <h1 class="title">Lista de compras</h1>
-  <app-new-todo (nameChanged)="onAddTodo($event)"/>
-  <app-todo *ngFor="let todo of todos; let id = index" name="{{ todo }}" id="{{ id }}" (removeItem)="onRemoveTodo($event)"/>
-</section>

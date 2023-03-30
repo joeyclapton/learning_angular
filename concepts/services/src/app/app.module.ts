@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CoursesComponent } from './components/courses/courses/courses.component';
+import { CoursesComponent } from './components/courses/courses.component';
 
 @NgModule({
   declarations: [
