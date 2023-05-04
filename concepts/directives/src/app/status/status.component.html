@@ -1,7 +1,0 @@
-<section>
-  <p *ngIf="currentStatus" highlight [highlightColor]="'blue'">
-    Estado atual: {{ currentStatus }}
-  </p>
-  <p *ngElse="!currentStatus">Sem estado.</p>
-  <p [hidden]="!nextStatus">Próximo estado: {{ nextStatus }}</p>
-</section>
