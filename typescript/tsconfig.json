@@ -5,6 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "target": "ESNext",
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "noImplicitAny": false
   }
 }
